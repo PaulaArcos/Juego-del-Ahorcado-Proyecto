@@ -1,52 +1,87 @@
-# Juego-del-Ahorcado-Proyecto
-Este es un juego clásico del Ahorcado desarrollado en Python usando la librería Pygame. Permite al jugador elegir categorías y adivinar palabras ocultas, mostrando un dibujo del ahorcado conforme se cometen errores. Cuenta con pistas automáticas, cambio de categorías y reinicio del juego para una experiencia dinámica y entretenida.
+# Juego del Ahorcado en Pygame
+Descripción
+Este proyecto es una implementación del clásico juego Ahorcado utilizando la biblioteca Pygame para Python. El juego permite elegir entre varias categorías de palabras y ofrece pistas automáticas para facilitar la experiencia. Se incluyen controles para cambiar categorías y reiniciar el juego.
+
+El desarrollo se realizó utilizando Visual Studio como entorno de desarrollo integrado (IDE), aprovechando sus herramientas para depuración y gestión del proyecto.
 
 # Características
-Elección de categoría entre varias opciones (Cocina, Animales, Países, Colores, Deportes, Instrumentos).
+Selección de categoría antes de comenzar a jugar.
 
-Pistas automáticas mostrando 1 o 2 letras según la longitud de la palabra.
+Pistas automáticas al revelar algunas letras al inicio.
 
-Visualización gráfica del ahorcado conforme se van perdiendo intentos.
+Gráficos dinámicos del ahorcado que se van dibujando con cada error.
 
-Interfaz sencilla y clara con mensajes para ganar o perder.
+Control por teclado:
 
-Posibilidad de cambiar la categoría con la tecla ESPACIO.
+Presiona una letra para adivinar.
 
-Reinicio del juego con la tecla R.
+Presiona ESPACIO para cambiar de categoría y reiniciar.
+
+Presiona R para reiniciar la misma categoría después de ganar o perder.
+
+Interfaz sencilla y clara con texto y gráficos.
+
+# Categorías disponibles
+Cocina
+
+Animales
+
+Países
+
+Colores
+
+Deportes
+
+Instrumentos
+
+Cada categoría contiene una lista de palabras relacionadas para adivinar.
 
 # Requisitos
 Python 3.x
 
-Pygame (se puede instalar con pip install pygame)
+Pygame
 
+Visual Studio (opcional, para desarrollo y depuración)
+
+Puedes instalar Pygame con:
+
+pip install pygame
 # Uso
-Ejecutar el script:
+Abre el proyecto en Visual Studio o ejecuta el archivo principal directamente con Python:
 
-poner en la terminal python ahorcado.py
-En la pantalla inicial, elegir una categoría presionando el número correspondiente (1-6).
+bash
+Copiar
+Editar
+python ahorcado.py
+En la pantalla inicial, selecciona una categoría presionando el número correspondiente.
 
-Comenzar a adivinar letras presionando las teclas del teclado.
+Presiona letras en el teclado para adivinar la palabra oculta.
 
-Puedes cambiar la categoría en cualquier momento presionando ESPACIO.
+Observa cómo se dibuja el ahorcado con cada error.
 
-Cuando el juego termine (ganes o pierdas), presiona R para reiniciar.
+Cambia de categoría en cualquier momento presionando ESPACIO.
 
-# Controles
-Letras: para adivinar.
+Al ganar o perder, presiona R para reiniciar la misma categoría.
 
-ESPACIO: cambiar categoría y reiniciar con una nueva palabra.
+# Cómo funciona el juego
+Al iniciar, se elige una categoría y una palabra secreta al azar.
 
-R: reiniciar la partida con la misma categoría.
+Se revelan automáticamente algunas letras como pistas.
 
-Cerrar ventana: salir del juego.
+Cada letra incorrecta disminuye el número de intentos restantes.
 
-# Estructura del código
-palabras: Diccionario con categorías y listas de palabras.
+El ahorcado se dibuja gradualmente conforme se cometen errores.
 
-reiniciar(cat): Inicializa el juego con una palabra nueva de la categoría seleccionada y pistas.
+El juego termina si adivinas todas las letras o si se agotan los intentos.
 
-elegir_categoria(): Permite seleccionar la categoría antes de empezar.
+Estructura del código
+reiniciar(cat): Reinicia el juego con una nueva palabra de la categoría cat.
 
-dibujar_ahorcado(): Dibuja el ahorcado en la pantalla según los intentos fallidos.
+elegir_categoria(): Muestra el menú para seleccionar categoría.
 
-main(): Bucle principal que controla la lógica del juego y la interacción.
+dibujar_ahorcado(superficie, intentos): Dibuja el ahorcado según los errores cometidos.
+
+main(): Controla el flujo general del juego, eventos, y actualización de pantalla.
+
+# Autor
+Daniela Arcos — Quito, agosto 2025
