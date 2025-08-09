@@ -49,10 +49,8 @@ pip install pygame
 # Uso
 Abre el proyecto en Visual Studio o ejecuta el archivo principal directamente con Python:
 
-bash
-Copiar
-Editar
 python ahorcado.py
+
 En la pantalla inicial, selecciona una categoría presionando el número correspondiente.
 
 Presiona letras en el teclado para adivinar la palabra oculta.
