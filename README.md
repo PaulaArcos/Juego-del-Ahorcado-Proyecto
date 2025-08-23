@@ -6,7 +6,7 @@ El juego permite elegir entre varias categorías de palabras y ofrece pistas aut
 
 El desarrollo se realizó utilizando Visual Studio como entorno de desarrollo integrado (IDE), aprovechando sus herramientas para depuración y gestión del proyecto.
 
-#Características
+###Características
 
 Selección de categoría antes de comenzar a jugar.
 
