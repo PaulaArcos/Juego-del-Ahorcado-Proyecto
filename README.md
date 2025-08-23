@@ -5,8 +5,7 @@ Este proyecto es una implementación del clásico juego Ahorcado utilizando la b
 El juego permite elegir entre varias categorías de palabras y ofrece pistas automáticas para facilitar la experiencia. Además, incluye un historial de partidas y controles para cambiar categorías o reiniciar el juego.
 
 El desarrollo se realizó utilizando Visual Studio como entorno de desarrollo integrado (IDE), aprovechando sus herramientas para depuración y gestión del proyecto.
-
-###Características
+✨ Características
 
 Selección de categoría antes de comenzar a jugar.
 
@@ -28,7 +27,7 @@ Historial de partidas: registra últimas partidas mostrando palabra, categoría,
 
 Sistema de puntaje: 10 puntos base + tiempo restante por palabra acertada.
 
-#Categorías disponibles
+📂 Categorías disponibles
 
 Cocina
 
@@ -50,19 +49,19 @@ Profesiones
 
 Cada categoría contiene una lista de palabras relacionadas para adivinar.
 
-#Requisitos
+🖥️ Requisitos
 
-Python 3.11.exe
+Python 3.x
 
 Pygame
 
-Visual Studio (para desarrollo y depuración)
+Visual Studio (opcional, para desarrollo y depuración)
 
 Instalación de Pygame:
 
 pip install pygame
 
-#Uso
+▶️ Uso
 
 Abre el proyecto en Visual Studio o ejecuta el archivo principal directamente con Python:
 
@@ -87,7 +86,7 @@ Cambia de categoría en cualquier momento presionando ESPACIO.
 
 Al ganar o perder, presiona R para reiniciar la misma palabra.
 
-#Cómo funciona el juego
+⚙️ Cómo funciona el juego
 
 Se selecciona una categoría y una palabra secreta al azar.
 
@@ -101,7 +100,7 @@ El juego termina si adivinas todas las letras o si se agotan los intentos.
 
 Se registran los resultados en un historial, incluyendo puntos y categoría.
 
-#Estructura del código
+📜 Estructura del código
 
 reiniciar(cat): Reinicia el juego con una nueva palabra de la categoría cat.
 
@@ -115,6 +114,6 @@ pantalla_inicio(): Pantalla de bienvenida con botones para iniciar, historial o 
 
 main(): Controla el flujo general del juego, eventos, actualización de pantalla y puntaje.
 
-#Autor
+👩‍💻 Autor
 
 Daniela Arcos — Quito, agosto 2025
